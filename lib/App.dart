@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_reminder/Components/appBar.dart';
+import 'package:todo_reminder/Components/todo.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -16,6 +17,7 @@ class _AppState extends State<App> {
         child: Column(
           children: [
             appBar(),
+            createTodo('Learn Java'),
           ],
         ),
       ),
