@@ -4,9 +4,10 @@ createTodo(String todo) {
   return Padding(
     padding: const EdgeInsets.only(left: 10, right: 10),
     child: ClipRRect(
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(15),
       child: Card(
         shadowColor: Colors.black,
+        elevation: 4,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
@@ -35,12 +36,12 @@ createTodo(String todo) {
                   ),
                   onPressed: () {},
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 5),
                 TextButton(
                   child: const Text('Snooze', style: TextStyle(fontSize: 17)),
                   onPressed: () {},
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 5),
               ],
             ),
           ],
