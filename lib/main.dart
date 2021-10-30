@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:todo_reminder/App.dart';
+import 'package:todo_reminder/DB/sharedPrefs.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPrefs.init();
   runApp(MyApp());
 }
 
